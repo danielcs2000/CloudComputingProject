@@ -1,0 +1,132 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Account {
+  id                String  @id @default(auto()) @map("_id") @db.ObjectId
+  userId            String  @db.ObjectId
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.String
+  access_token      String? @db.String
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.String
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(auto()) @map("_id") @db.ObjectId
+  sessionToken String   @unique
+  userId       String   @db.ObjectId
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model User {
+  id            String    @id @default(auto()) @map("_id") @db.ObjectId
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  image         String?
+  accounts      Account[]
+  sessions      Session[]
+  role          Role      @default(GUEST)
+}
+
+enum Role {
+  GUEST
+  EDITOR
+  ADMIN
+}
+
+model VerificationToken {
+  id         String   @id @default(auto()) @map("_id") @db.ObjectId
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+// Taxonomy
+model Family {
+  id          String      @id @default(auto()) @map("_id") @db.ObjectId
+  name        String      @unique
+  subFamilies SubFamily[]
+}
+
+model SubFamily {
+  id       String  @id @default(auto()) @map("_id") @db.ObjectId
+  name     String  @unique
+  tribes   Tribe[]
+  family   Family  @relation(fields: [familyId], references: [id])
+  familyId String  @db.ObjectId
+}
+
+model Tribe {
+  id          String    @id @default(auto()) @map("_id") @db.ObjectId
+  name        String    @unique
+  genres      Genre[]
+  subFamily   SubFamily @relation(fields: [subFamilyId], references: [id])
+  subFamilyId String    @db.ObjectId
+}
+
+model Genre {
+  id      String    @id @default(auto()) @map("_id") @db.ObjectId
+  name    String    @unique
+  species Species[]
+  tribe   Tribe     @relation(fields: [tribeId], references: [id])
+  tribeId String    @db.ObjectId
+}
+
+model Species {
+  id                String         @id @default(auto()) @map("_id") @db.ObjectId
+  name              String         @unique // cientific name
+  names             String[] // all known names 
+  morphology        String?
+  habitad           String?
+  iucnCode          String?
+  iucnUrl           String?
+  citiesCode        String?
+  citiesUrl         String?
+  nationalNormative String?
+  observation       String?
+  photoUrls         String[]
+  departments       String[]
+  distributions     Distribution[]
+  genre             Genre          @relation(fields: [genreId], references: [id])
+  genreId           String         @db.ObjectId
+}
+
+model Distribution {
+  id              String   @id @default(auto()) @map("_id") @db.ObjectId
+  department      String
+  province        String
+  location        String
+  elevation       Float
+  longitude       Float
+  latitude        Float
+  colector        String
+  colectionNumber String
+  colectedAt      DateTime
+  herbarium       String?
+  aditionalNotes  String?
+  photoUrls       String[]
+  species         Species  @relation(fields: [speciesId], references: [id], onDelete: Cascade)
+  speciesId       String   @db.ObjectId
+}

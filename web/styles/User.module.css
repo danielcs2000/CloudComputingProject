@@ -1,0 +1,36 @@
+.cardUser{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.buttons{
+    display:flex;
+    justify-content:right;
+    align-items:center;
+}
+
+.email{
+    display:flex;
+    align-items:center;
+}
+
+.role{
+    margin-top:6px;
+}
+
+@media only screen and (max-width: 768px) {
+    .role {
+        margin-left: 5px;   
+    }
+  }
+
+.textRoles{
+    margin-top:18px !important;
+}
+
+  @media only screen and (max-width: 768px) {
+    .textRoles {
+        margin-top: 5px !important;
+    }
+  }
+

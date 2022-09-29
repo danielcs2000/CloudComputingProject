@@ -1,0 +1,60 @@
+.boxTimeLine {
+  border-top: none;
+  border-bottom: none;
+}
+
+.divMapa {
+  height: 300px;
+  width: auto;
+  background-color: gray;
+}
+
+.divBoton {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.divider{
+    padding-top: 10px;
+}
+
+
+.Col{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Col1{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.colButton{
+  display:flex;
+  justify-content: right;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .colButton {
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    
+  }
+}
+
+.gridButtons{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  margin-top:0px !important;
+}
+
+.colData{
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
