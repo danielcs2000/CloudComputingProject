@@ -3,7 +3,10 @@
 
 ## Arquitectura de la aplicación
 
+La figura muestra una aplicación un NextJS en el cual el frontend y el backend está contenido en bloque. Adicionalmente, la aplicación usa MongoDB, una base de datos no relacional que nos permite gestionar textos de manera rápida y flexible. 
+
 ![Arquitectura](https://user-images.githubusercontent.com/34191864/193142008-a9d61288-15ee-4937-aefd-fd27feaa8b93.jpg)
+
 
 
 
