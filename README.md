@@ -24,4 +24,12 @@ Para el desarrollo se utilizó la versión `16.17.1` de Node
 
 Luego ir a `http://localhost:3000/`
 
+## Imágenes de la aplicación
+
+![image](https://user-images.githubusercontent.com/34191864/193143316-3499a914-b579-47e3-bee8-1bab4aeb8d27.png)
+
+![image](https://user-images.githubusercontent.com/34191864/193143416-616d1c69-8c6b-45bd-8871-654031b5e9b5.png)
+
+![image](https://user-images.githubusercontent.com/34191864/193143474-bb069273-82a8-4b47-98d4-79e24a91d6aa.png)
+
 
