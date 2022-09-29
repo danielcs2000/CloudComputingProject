@@ -1,6 +1,10 @@
 # Proyecto Cloud Computing
 
 
+## Arquitectura de la aplicación
+
+![Arquitectura](https://user-images.githubusercontent.com/34191864/193142008-a9d61288-15ee-4937-aefd-fd27feaa8b93.jpg)
+
 
 
 ## Instanciar la aplicación
