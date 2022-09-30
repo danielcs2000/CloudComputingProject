@@ -18,12 +18,12 @@ Subir, editar, eliminar y leer especies de cactus.
 Administrar usuarios.
 ```
 ## Funcionalidad de la aplicación
-Se optendra tres tipos de roles:
+Se obtendrá tres tipos de roles:
 ```
 1- Lector: Buscar las especies de cactus, tiene un filtro para la busqueda de cactus, y no es necesario iniciar sección para el uso.
 ```
 ```
-2- Editor: Puede subir mas especies, editar los comentarios del cactus, y leer especies de cactus.
+2- Editor: Puede subir más especies, editar los comentarios del cactus, y leer especies de cactus.
 ```
 ```
 3- Administrador: Tiene la funcionalidad del editor, agregando la creación y eliminación de roles.
