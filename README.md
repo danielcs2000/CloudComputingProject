@@ -8,9 +8,10 @@
 La web Cactus Net es un repositorio de especies especialmente para cactus, donde tendremos un mapa donde se pondrá la ubicación exacta, quien lo encontrado la especie del cactus. Con esto se puede hacer 3 tipos de filtros; tambien podemos realizar las siguientes acciones subir, editar, eliminar y leer especies de cactus. Finalmente, podremos realizar la administración de usuarios.
 ## Funcionalidad de la aplicación
 La aplicacion admite 3 tipos de roles de usuarios:
-1. Lector: Buscar las especies de cactus, tiene un filtro para la busqueda de cactus, y no es necesario iniciar sección para el uso.
-2. Editor: Puede subir más especies, editar los comentarios del cactus, y leer especies de cactus.
-3. Administrador: Tiene la funcionalidad del editor, agregando la creación y eliminación de roles.
+1.	Lector: puede acceder a la información de las especies de cactus, así como a sus registros asociados, además puede utilizar los filtros para una búsqueda más específica. Adicionalmente, si el usuario no tiene una cuenta en la plataforma puede igualmente acceder a la información.
+2.	Editor: Puede editar la información relacionada a una especie o registro en específico. Además, también puede añadir y eliminar especies y/o registros en específico. 
+3.	Administrador: Tiene los privilegios de un editor. Adicionalmente, tiene acceso a la información de usuarios registrados y puede cambiar de rol a usuarios registrados, así como, añadir y eliminar usuarios.
+
 ## Arquitectura de la aplicación
 La figura muestra una aplicación un NextJS en el cual el frontend y el backend está contenido en bloque. Adicionalmente, la aplicación usa MongoDB, una base de datos no relacional que nos permite gestionar textos de manera rápida y flexible. 
 
