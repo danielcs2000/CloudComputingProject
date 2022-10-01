@@ -7,7 +7,7 @@
 ## Características de la aplicación
 La web Cactus Net es un repositorio de especies especialmente para cactus, donde tendremos un mapa donde se pondrá la ubicación exacta, quien lo encontrado la especie del cactus. Con esto se puede hacer 3 tipos de filtros; tambien podemos realizar las siguientes acciones subir, editar, eliminar y leer especies de cactus. Finalmente, podremos realizar la administración de usuarios.
 ## Funcionalidad de la aplicación
-Se obtendrá tres tipos de roles:
+La aplicacion admite 3 tipos de roles de usuarios:
 1. Lector: Buscar las especies de cactus, tiene un filtro para la busqueda de cactus, y no es necesario iniciar sección para el uso.
 2. Editor: Puede subir más especies, editar los comentarios del cactus, y leer especies de cactus.
 3. Administrador: Tiene la funcionalidad del editor, agregando la creación y eliminación de roles.
