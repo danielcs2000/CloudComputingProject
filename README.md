@@ -5,15 +5,12 @@
 |  1 | Rojas Cruz, Daniel Julian | 100% |
 |  2 | Lazo Pampa, David Alejandro| 100% |
 ## Características de la aplicación
-La web Cactus Net es un repositorio de especies especialmente para cactus, donde tendremos un mapa donde se pondrá la ubicación exacta, quien lo encontrado la especie del cactus.
-Se puede hacer 3 tipos de filtros.
-Subir, editar, eliminar y leer especies de cactus.
-Administrar usuarios.
+La web Cactus Net es un repositorio de especies especialmente para cactus, donde tendremos un mapa donde se pondrá la ubicación exacta, quien lo encontrado la especie del cactus. Con esto se puede hacer 3 tipos de filtros; tambien podemos realizar las siguientes acciones subir, editar, eliminar y leer especies de cactus. Finalmente, podremos realizar la administración de usuarios.
 ## Funcionalidad de la aplicación
 Se obtendrá tres tipos de roles:
-1- Lector: Buscar las especies de cactus, tiene un filtro para la busqueda de cactus, y no es necesario iniciar sección para el uso.
-2- Editor: Puede subir más especies, editar los comentarios del cactus, y leer especies de cactus.
-3- Administrador: Tiene la funcionalidad del editor, agregando la creación y eliminación de roles.
+1. Lector: Buscar las especies de cactus, tiene un filtro para la busqueda de cactus, y no es necesario iniciar sección para el uso.
+2. Editor: Puede subir más especies, editar los comentarios del cactus, y leer especies de cactus.
+3. Administrador: Tiene la funcionalidad del editor, agregando la creación y eliminación de roles.
 ## Arquitectura de la aplicación
 La figura muestra una aplicación un NextJS en el cual el frontend y el backend está contenido en bloque. Adicionalmente, la aplicación usa MongoDB, una base de datos no relacional que nos permite gestionar textos de manera rápida y flexible. 
 
