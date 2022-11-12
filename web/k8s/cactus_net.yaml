@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: cactus-net-web
+spec:
+  containers:
+  - name: cactus-net-web
+    image: cactus_net:latest
+    imagePullPolicy: Never
+    

@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: web-deployment
+
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        component: cactus-net-app
+    spec:
+      containers:
+        - name: cactus-net-web-container
+          image: cactus_net:latest
+          imagePullPolicy: Never
+          ports:
+          - containerPort: 3000
+          
+
+  selector:
+    matchLabels:
+      component: cactus-net-app
