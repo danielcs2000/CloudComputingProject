@@ -17,6 +17,9 @@ La figura muestra una aplicación un NextJS en el cual el frontend y el backend 
 
 ![Arquitectura](https://user-images.githubusercontent.com/34191864/193142008-a9d61288-15ee-4937-aefd-fd27feaa8b93.jpg)
 
+## Arquitectura con Kubernetes
+![ArquitecturaV2](https://user-images.githubusercontent.com/40555746/201862263-7f9463a1-0a3f-43a8-9d16-5116cedd61ca.png)
+
 ## Instanciar la aplicación
 Para el desarrollo se utilizó la versión `16.17.1` de Node 
 
