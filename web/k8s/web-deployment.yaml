@@ -13,8 +13,8 @@ spec:
     spec:
       containers:
         - name: cactus-net-web-container
-          image: cactus_net:latest
-          imagePullPolicy: Never
+          image: julianrc123/cactus_net:prod
+          imagePullPolicy: Always
           ports:
           - containerPort: 3000
           
