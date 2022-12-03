@@ -42,7 +42,15 @@ Luego ir a `http://localhost:3000/`
 ![image](https://user-images.githubusercontent.com/34191864/193143474-bb069273-82a8-4b47-98d4-79e24a91d6aa.png)
 
 
-Conclusiones:
+## Imágenes del deploy en servicio de Google Cloud
+
+# Funcionalidades Cloud Añadidas
+
+- Deploy en Google Kubernetes Engine
+- Uso de PVC Storage
+- Uso de Ngix como balanceador de carga
+
+## Conclusiones:
 
 - Se pudo containerizar las aplicaciones
 - Se utilizó una arquitectura escalable y flexible
