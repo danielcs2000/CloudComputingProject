@@ -44,7 +44,25 @@ Luego ir a `http://localhost:3000/`
 
 ## Imágenes del deploy en servicio de Google Cloud
 
-# Funcionalidades Cloud Añadidas
+- Cargas de trabajo 
+
+![image](https://user-images.githubusercontent.com/34191864/205445363-f4332b18-2cbe-4543-ad1a-7d360c99791f.png)
+
+- Servicios
+
+![image](https://user-images.githubusercontent.com/34191864/205445450-c1d1359e-581e-4037-bb4c-3763b5193081.png)
+
+
+- Ingress 
+
+![image](https://user-images.githubusercontent.com/34191864/205445394-98d7c1cf-e7c0-4ab5-b1a5-3abbea9cd638.png)
+
+- Storage
+
+![image](https://user-images.githubusercontent.com/34191864/205445486-3a1f887a-4796-48ec-b934-1a722147d759.png)
+
+
+## Funcionalidades Cloud Añadidas
 
 - Deploy en Google Kubernetes Engine
 - Uso de PVC Storage
