@@ -42,3 +42,9 @@ Luego ir a `http://localhost:3000/`
 ![image](https://user-images.githubusercontent.com/34191864/193143474-bb069273-82a8-4b47-98d4-79e24a91d6aa.png)
 
 
+Conclusiones:
+
+- Se pudo containerizar las aplicaciones
+- Se utilizó una arquitectura escalable y flexible
+- Se deployó la aplicación con k8s en un servicio cloud
+
